@@ -5,7 +5,7 @@ use App\Vm;
 use App\Server;
 use App\Vmcheck;
 
-class unitTest extends  TestCase
+class UnitTest extends  TestCase
 {
     private $server;
     private $Vmcheck;
@@ -14,7 +14,7 @@ class unitTest extends  TestCase
     protected   function   setUp ( ) :   void
     {
 
-        $this->server = Server::getInstacne(0, 32, 100);
+        $this->server = Server::getInstacne(2, 32, 100);
 
         $this->vmcheck=new Vmcheck( $this->server);
 
